@@ -1,4 +1,5 @@
 import database from "infra/database.js";
+import { RESPONSE_LIMIT_DEFAULT } from "next/dist/server/api-utils";
 
 async function status(request, response) {
   const updatedAt = new Date().toISOString();
